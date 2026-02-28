@@ -304,6 +304,7 @@ const refreshPreviewForNext = () => {
   if (!previewBox) return;
   createOrUpdatePreview(nextWeight, lastHoverPosition);
 };
+window.refreshPreviewForNext = refreshPreviewForNext;
 
 plankClickArea.addEventListener("click", (event) => {
   const { position, direction } = calculateClickPosition(event);
